@@ -43,7 +43,6 @@ const userScheme = new Schema<IUser>(
     timestamps: true,
     toJSON: {
         transform(doc, ret) {
-            //ret.id = ret._id;
             // the document id will not appear in json reurn 
             delete ret._id;
             //delete mongoose version key
