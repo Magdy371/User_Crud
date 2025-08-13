@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">user_crud</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.0.0</PackageJsonVersion>
+    <PackageJsonDescription Condition="$(PackageJsonDescription) == ''"></PackageJsonDescription>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">app.js</PackageJsonMain>
+    <PackageJsonScriptsStart Condition="$(PackageJsonScriptsStart) == ''">node dist/index.js</PackageJsonScriptsStart>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">nodemon src/index.ts</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">tsc </PackageJsonScriptsBuild>
+    <PackageJsonScriptsTest Condition="$(PackageJsonScriptsTest) == ''">echo "Error: no test specified" &amp;&amp; exit 1</PackageJsonScriptsTest>
+    <PackageJsonScriptsClean Condition="$(PackageJsonScriptsClean) == ''">tsc --build --clean</PackageJsonScriptsClean>
+    <PackageJsonKeywords Condition="$(PackageJsonKeywords) == ''">[]</PackageJsonKeywords>
+    <PackageJsonAuthor Condition="$(PackageJsonAuthor) == ''"></PackageJsonAuthor>
+    <PackageJsonLicense Condition="$(PackageJsonLicense) == ''">ISC</PackageJsonLicense>
+    <PackageJsonDevdependenciesTypesNode Condition="$(PackageJsonDevdependenciesTypesNode) == ''">^24.2.1</PackageJsonDevdependenciesTypesNode>
+    <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^9.33.0</PackageJsonDevdependenciesEslint>
+    <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">^5.9.2</PackageJsonDevdependenciesTypescript>
+  </PropertyGroup>
+</Project>
